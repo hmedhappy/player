@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>HTML Video Player</title>
+  </head>
+  <body>
+    <div class="video-player">
+      <video
+        width="600"
+        src="http://splf.fr/ventoline/&flux=3"
+        poster="YOUR-POSTER.png"
+        class="video"
+      ></video>
+
+      <div class="player-controls">
+        <!-- Medicamnet -->
+        <div class="video-title">
+          <h4>Nom du médicament</h4>
+          <p>Type de dispositif</p>
+        </div>
+
+        <div class="progress-time" style="display: flex">
+          <div class="video-progress">
+            <div class="video-progress-filled"></div>
+          </div>
+
+          <!--  <input
+          type="range"
+          class="volume"
+          min="0"
+          max="1"
+          step="0.01"
+          value="1"
+          /> -->
+          <div class="time">
+            <span class="current">0:00</span> /
+            <span class="duration">0:00</span>
+          </div>
+        </div>
+        <!-- Progress bar  -->
+
+        <div class="Button-Section">
+          <img
+            width="22"
+            height="22"
+            src="sound.png"
+            id="vol_img"
+          />
+          <button
+            class="play-button"
+            style="width: 22px; height: 22px"
+            title="Play"
+          >
+            <span>►</span>
+          </button>
+          <button
+            class="play-button"
+            style="width: 22px; height: 22px"
+            title="Play"
+          >
+            <span>►</span>
+          </button>
+          <button
+            class="play-button"
+            style="width: 22px; height: 22px"
+            title="Play"
+          >
+            <span>►</span>
+          </button>
+          <button
+            class="play-button"
+            style="width: 22px; height: 22px"
+            title="Play"
+          >
+            <span>►</span>
+          </button>
+          <button
+            class="play-button"
+            title="Play"
+            style="margin-left: 10px"
+          >
+            <span>►</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="video.js"></script>
+  </body>
+</html>
